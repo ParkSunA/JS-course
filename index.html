@@ -4,15 +4,27 @@
 
     </head>
     <body>
-        <h1><a href="index.html">WEB</a></h1>
+        <h1><a href="index.html" onclick="
+            event.preventDefault();
+            document.querySelector('article').innerHTML=
+            '<h2>WELCOME</h2> Hello, WEB';
+            ">WEB</a></h1>
         <ul>
-            <li><a href="1.html">HTML</a></li>
-            <li><a href="2.html">CSS</a></li>
+            <li><a href="1.html" onclick="
+                event.preventDefault();
+                document.querySelector('article').innerHTML =
+                '<h2>html</h2>HTML is...';
+                ">HTML</a></li>
+            <li><a href="2.html" onclick="
+                event.preventDefault();
+                document.querySelector('article').innerHTML=
+                '<h2>CSS</h2> CSS is';
+                ">CSS</a></li>
         </ul>
 
-        <aritcle>
+        <article>
             <h2>WELCOME</h2>
             Hello, WEB
-        </aritcle>
+        </article>
     </body>
 </html>
