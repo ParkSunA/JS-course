@@ -1,0 +1,15 @@
+/* * {
+    border: solid 1px blue;
+} */
+
+article {
+    display: inline-block;
+}
+
+article#display {
+    padding: 80px;
+    position:relative;
+    bottom: 130px; 
+    left : 50px;
+    border: solid 1px rgb(207, 232, 255);
+}
