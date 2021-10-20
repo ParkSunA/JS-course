@@ -2,14 +2,27 @@
     border: solid 1px blue;
 } */
 
+#update #delete {
+    display: inline-block;
+    position:relative;
+    left : 0px;
+    bottom: 30px;
+}
 article {
     display: inline-block;
 }
 
 article#display {
-    padding: 80px;
+    padding: 200px;
     position:relative;
-    bottom: 130px; 
-    left : 50px;
+    top: 50px; 
+    left : 200px;
     border: solid 1px rgb(207, 232, 255);
+}
+
+article#list{
+    position:fixed;
+    /* top: -200px; 
+    font-size: 20px; */
+
 }
