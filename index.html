@@ -1,44 +1,31 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script>
-            function welcome(){
-                article.innerHTML='<h2>WELCOME</h2> Hello, WEB';
-            }
-            function html(){
-                article.innerHTML ='<h2>html</h2>HTML is...';
-            }
-            function css(){
-                article.innerHTML='<h2>CSS</h2> CSS is';
-            }
-        </script>
+        <meta charset="UTF-8">
+        <title>게시판</title>
     </head>
     <body>
-        <h1><a href="index.html" onclick="
-            event.preventDefault();
-            welcome();
-            ">WEB</a></h1>
-        <ul>
-            <li><a href="1.html" onclick="
-                event.preventDefault();
-                html();
-                ">HTML</a></li>
-            <li><a href="2.html" onclick="
-                event.preventDefault();
-                css();
-                ">CSS</a></li>
-        </ul>
-
-        <article>
-        <!--
-            <h2>WELCOME</h2>
-            Hello, WEB
-        -->
+        <link rel="stylesheet" href="index.css">
+        <h1>게시판</h1>
+        <article id="list">
+            <ul id = makeList>
+                
+            </ul>
+            <input>
+            <button>검색</button>
         </article>
-        <script>
-            var article = document.querySelector('article');
-            welcome();
-        </script>
-
+        
+        <article id="display">
+            <form id=display_form>
+                <button id="createBtn">글 게시하기</button>
+                <div><input id="createTitle" name="title" required placeholder="제목을 적어주세요"></div>
+                <div><textarea id="createBody" name="body" cols="24" rows="5" required="required" placeholder="내용을 적어주세요"></textarea></div>
+            </form>
+        </article>
+        
+    
+        
+        
+        <script src = "index.js"></script>
     </body>
 </html>
